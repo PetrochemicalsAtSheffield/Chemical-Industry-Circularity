@@ -486,8 +486,13 @@ def _merge_wedge_charts(sensitivity_list: dict, cwd: str, model_scope: str):
             final_path = os.path.join(
                 cwd, "output", model_scope, pathway, sensitivity, "final"
             )
-            chemicals = os.listdir(final_path)
-            chemicals.remove("All")
+            #chemicals = os.listdir(final_path)
+            #chemicals.remove("All")
+            chemicals = [
+                x for x in os.listdir(final_path)
+                if os.path.isdir(os.path.join(final_path, x))
+                and x != "All"
+                ]
             for chemical in chemicals:
                 for extension in ["html", "png"]:
                     for wedge_type in "technology", "region":
