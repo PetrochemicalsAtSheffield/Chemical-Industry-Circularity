@@ -5,4 +5,4 @@ numpy-financial
 openpyxl
 numpy~=1.21.2
 pytest
-kaleido
+kaleido~=0.2.1
