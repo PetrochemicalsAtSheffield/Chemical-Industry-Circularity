@@ -20,6 +20,7 @@ Alternatively, if you are already using Conda, you can use it to get the correct
   ```
   Don't "activate" the environment now.
 
+
 Either way, we then need to [install virtualenv](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/), which manages all the dependencies of the code to get the correct versions installed. The simplest way is to run `pip install virtualenv`.
 - Navigate to `Pathways-Chemical-Industry` folder
 - Then run`virtualenv Pathways-Chemical-Industry`
